@@ -86,4 +86,9 @@
     flex-direction: column; /* Stack the cards vertically on small screens */
     align-items: center;
   }
+
+  .card {
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Optional: Set a max width */
+  }
 }

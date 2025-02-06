@@ -117,3 +117,26 @@
   max-width: 300px; /* Set a maximum width for the video */
   max-height: 200px; /* Set a maximum height for the video */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .class-description {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .class-description .left-column,
+  .class-description .right-column {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .class-description .center-column {
+    width: 100%;
+  }
+
+  .class-description .buttons {
+    justify-content: center;
+  }
+}

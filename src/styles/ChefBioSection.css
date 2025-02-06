@@ -67,3 +67,29 @@
 }
 
 /* Responsive Design */
+@media (max-width: 768px) {
+  .chef-bio {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .chef-bio__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chef-bio__text {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .chef-bio__button {
+    padding-left: 0;
+  }
+
+  .chef-bio__image-container {
+    width: 100%;
+    height: auto;
+  }
+}

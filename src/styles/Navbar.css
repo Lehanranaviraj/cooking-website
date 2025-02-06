@@ -31,7 +31,7 @@
 
 .menu-icon {
   position: absolute;
-  left: -10rem; /* Position menu icon to the left */
+  left: 1rem; /* Adjust position for mobile */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -64,7 +64,7 @@
 
 .nav-links {
   position: absolute;
-  right: -10rem; /* Position buttons to the right */
+  right: 1rem; /* Adjust position for mobile */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -103,4 +103,42 @@
 .contact-btn:hover {
   background-color: #3c4836; /* Dark fill on hover */
   color: #fff; /* White text */
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    left: 1rem; /* Adjust position for mobile */
+  }
+
+  .nav-links {
+    position: static;
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Hide menu by default */
+    background-color: #f7f6e8; /* Match background color */
+    padding: 1rem 0;
+  }
+
+  .nav-links.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0; /* Remove border radius */
+  }
+
+  .reserve-btn,
+  .contact-btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
 }
